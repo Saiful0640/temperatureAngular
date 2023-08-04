@@ -1,0 +1,58 @@
+<p>temperature works!</p>
+
+<button (click)="temperatureSave()">Save</button>
+<input type="text" id="in1" [value]="title">
+
+<div>
+  <h1><u>Teamperature Data</u></h1>
+
+  <div>
+    <label for="" >date</label>
+    <input  type="text" [(ngModel)]="tdate">
+  </div>
+  <div>
+    <label for=""> time</label>
+    <input type="text" [(ngModel)]="time">
+  </div>
+
+  <div>
+    <button (click)="temperatureBydateAndTime(tdate, time)">showtemp</button>
+  </div>
+
+<div>
+  <label for="" >{{tempereatureObject.temperature}}</label>
+  <label for="">{{tempereatureObject.responseCode}}</label>
+  <label for="">{{tempereatureObject.responseMessage}}</label>
+</div>
+
+</div>
+
+
+<div>
+  <div>
+    <h1><u>@GetMethod</u></h1>
+
+    <div>
+      <label for="">date</label>
+      <input type="text" [(ngModel)]="tdate" >
+    </div>
+    <div>
+      <label for="">time</label>
+      <input type="text" [(ngModel)]="time">
+    </div>
+
+    <div>
+      <Button (click)="tempByDateAndTime(tdate, time)">CallGetMethod</Button>
+    </div>
+
+    <div>
+      <label for="">{{tempereatureObject.temperature}}</label>
+    </div>
+    <div>
+      <label for="">{{tempereatureObject.responseCode}}</label>
+    </div>
+    <div>
+      <label for="">{{tempereatureObject.responseMessage}}</label>
+    </div>
+  </div>
+</div>
