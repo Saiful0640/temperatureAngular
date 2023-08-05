@@ -1,0 +1,26 @@
+<p>users works!</p>
+
+<div>
+  <h1>User Form</h1>
+  <div [formGroup]="userForm">
+    <div>
+      <label for="">first Name</label>
+      <input formControlName="firstName" type="text">
+    </div>
+    <div>
+      <label for="">Last Name</label>
+      <input  formControlName="lastName" type="text">
+    </div>
+    <div>
+      <label for="">Password</label>
+      <input formControlName="password" type="text">
+    </div>
+    <div>
+      <label for="">Email</label>
+      <input formControlName="email" type="text">
+    </div>
+    <div>
+      <button (click)="userSave()">Save</button>
+    </div>
+  </div>
+</div>
